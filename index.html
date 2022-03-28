@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Natuur_mockup</title>
+        <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
+        <meta name="keywords" content="">
+        <link rel="stylesheet" href="css/reset.css">
+        <link href="css/natuur_mock.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="images/ico/natuur_favicon.png">
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+        
+            
+                
+                if($(this).scrollTop()==0){
+                  $(".iconbutton").hide();
+                }
+                
+                $(document).scroll(function(){
+                    if($(this).scrollTop()>0){
+                        $(".iconbutton").show();
+                    }
+                    else{
+                        $(".iconbutton").hide();
+                    }  
+                })
+                
+                $(".iconbutton").click(function(){
+                    $("html,body").animate({
+                        scrollTop:0,
+                    },200)
+                })      
+                
+            })  
+            
+        </script>
+    </head>
+    <body>
+        <content>
+            <div class="page_txt">
+                <div class="txt_wrap">
+                    <p>제작한 페이지</p>
+                    <ul>
+                        <li><a href="main_index.html" target="_blank">Main Page</a></li>
+                        <li><a href="detail_index.html" target="_blank">Detail Page</a></li>
+                        <li><a href="brand_index.html" target="_blank">Brand Page</a></li>
+                    </ul>    
+                </div>    
+            </div>
+            <img src="images/natuur_mockup.jpg" alt="나뚜루목업" class="bg">  
+        </content>   
+        <div id="totop" class="iconbutton" >
+				▲
+		</div>
+    </body>
+</html>
